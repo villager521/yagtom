@@ -1,0 +1,12 @@
+#summary Details on updating this tutorial
+
+This tutorial is generated using the Matlab publish command. As such the html files should not be modified directly, as these changes will be overwritten if the tutorial is republished. Instead, authorized users should follow theses steps. 
+
+
+  * Checkout a local copy of the tutorial from the [http://code.google.com/p/yagtom/source/checkout svn repository]. 
+  * Make the desired modifications to the .m files in the source subdirectory. There is one file per 'chapter'. See [http://blogs.mathworks.com/loren/2006/06/07/publishing/ this page] for some markup tips, or type `doc publish` in Matlab. 
+  * In Matlab, change to the yagtom root directory and type `publishSource foo` where foo is the name the Matlab file you modified. Typing `publishSource` alone republishes all of the files in the source directory. 
+  * Check in the changes. 
+
+
+The [http://code.google.com/p/yagtom/ root wiki page] is not auto-generated. If you add or remove chapters, this will have to be manually updated. 
