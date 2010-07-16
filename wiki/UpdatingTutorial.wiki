@@ -1,6 +1,6 @@
 #summary Details on updating this tutorial
 
-This tutorial is generated using the Matlab [http://www.mathworks.com/access/helpdesk/help/techdoc/ref/publish.html publish] command. As such the html files should not be modified directly, as these changes will be overwritten if the tutorial is republished. Instead, authorized users should follow theses steps. 
+This tutorial is generated using the Matlab [http://www.mathworks.com/access/helpdesk/help/techdoc/ref/publish.html publish] command. As such the html files should not be modified directly, as these changes will be overwritten if the tutorial is republished. Instead, authorized users should follow these steps. 
 
 
   * Checkout a local copy of the tutorial from the [http://code.google.com/p/yagtom/source/checkout svn repository]. 
