@@ -4,7 +4,7 @@ This tutorial is generated using the Matlab [http://www.mathworks.com/access/hel
 
 
   * Checkout a local copy of the tutorial from the [http://code.google.com/p/yagtom/source/checkout svn repository]. 
-  * Make the desired modifications to the .m files in the source subdirectory. There is one file per 'chapter'. See [http://blogs.mathworks.com/loren/2006/06/07/publishing/ this page] for some markup tips, or type `doc publish` in Matlab. 
+  * Make the desired modifications to the .m files in the [http://yagtom.googlecode.com/svn/trunk/source/ source subdirectory]. There is one file per 'chapter'. See [http://blogs.mathworks.com/loren/2006/06/07/publishing/ this page] for some markup tips, or type `doc publish` in Matlab. 
   * In Matlab, change to the yagtom root directory and type `publishSource foo` where foo is the name the Matlab file you modified. Typing `publishSource` alone republishes all of the files in the source directory. 
   * Check in the changes. 
 
