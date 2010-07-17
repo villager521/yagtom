@@ -1,0 +1,54 @@
+#summary A page devoted to Octave
+
+*General discussion on Matlab vs Octave*
+
+In general, the advantages of Matlab over Octave are that
+
+  * It has much better graphics
+  * It has a much better IDE (integrated development environment), including an excellent editor, debugger, and profiler 
+  * It is faster than Octave, since it has a just-in-time compiler.
+  
+The advantage of Octave is that it is free.
+
+What we usually do is develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics. But for large compute jobs, which we run on clusters (such as Amazon's EC2), we use Octave, so we don't have to worry about licensing issues.
+
+
+*Compatability of Octave and Matlab*
+
+  * Octave's legend function has a different interface than Matlab's. 
+
+  * Octave sets random seeds differently than Matlab, hence random data is not consistent. 
+
+  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). 
+
+  * Octave does not support the concatenation of a cell array of strings and a string, you must first wrap the string in a cell. 
+
+{{{
+[{'a', 'b'}, 'c'] % works in Matlab, not in Octave
+[{'a', 'b'}, {'c'}] % works in both with the same results as above
+}}}
+
+  * Vertical concatenation of nested cell arrays of strings, e.g. vertcat(s{:}) behaves differently in Matlab and Octave. Matlab returns a cell array of strings, Octave returns a character array.
+
+*Files Missing in Octave*
+
+[http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
+
+*Running Octave from within Matlab*
+
+Octave can be launched within the Matlab command window, (useful for development purposes) by using the following code. Add these lines to a Matlab shortcut for single button access. 
+
+{{{ 
+addtosystempath('C:\Octave\3.2.3_gcc-4.4.0\bin');
+system('octave --traditional --persist --silent -i -p C:\pmtkData --eval addpath(genpath(''C:\pmtk3''))');
+
+}}}
+
+Type {{{ exit() }}} to return to Matlab. 
+
+Code in the Matlab editor can be executed in Octave, (while its running) by highlighting it and pressing the {{{ F9 }}} key. 
+
+*Additional links*
+
+  * [http://www.cs.toronto.edu/~murray/compnotes/octave_matlab.html]
+  * [http://www.gnu.org/software/octave/FAQ.html#MATLAB-compatibility].
