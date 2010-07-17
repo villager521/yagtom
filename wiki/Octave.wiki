@@ -12,7 +12,7 @@ The main advantages of Matlab over Octave are that
   * It is faster than Octave, since it has a just-in-time compiler.
   * It has more functions.
 
-What we usually do is develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics. But for large compute jobs, which we run on clusters (such as Amazon's EC2), we use Octave, so we don't have to worry about licensing issues.
+What we usually do is develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics. But for large compute jobs, which we run on the cloud (such as Amazon's EC2, or [http://www.monkeyanalytics.com/]), we use Octave, so we don't have to worry about licensing issues.
 
 
 *Compatability of Octave and Matlab*
