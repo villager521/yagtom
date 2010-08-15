@@ -32,6 +32,8 @@ What we usually do is develop code locally in Matlab (using a local site license
 
   * Vertical concatenation of nested cell arrays of strings, e.g. vertcat(s{:}) behaves differently in Matlab and Octave. Matlab returns a cell array of strings, Octave returns a character array.
 
+  * Calling bsxfun(@eq, a(:), sparse(1:n)) fails in Octave, but works if you omit the call to sparse. 
+
 *Files Missing in Octave*
 
 [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
