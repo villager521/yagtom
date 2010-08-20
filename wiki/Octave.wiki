@@ -36,6 +36,7 @@ What we usually do is develop code locally in Matlab (using a local site license
 
   * The octave {{{which}}} function behaves slightly differently than Matlab's If you call {{{w = which('foo.m')}}} in Octave while in the same directory as {{{foo.m}}}, octave returns {{{w = '.\foo.m'}}}, whereas Matlab will return the full absolute filepath. This causes problems when calling {{{addpath}}}.
 
+  * The following command fails, (does nothing) in Octave: {{{addpath(genpath(pwd), '-end')}}}. The problem is the {{{'-end'}}} option. 
 *Files Missing in Octave*
 
 [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
