@@ -34,7 +34,7 @@ What we usually do is develop code locally in Matlab (using a local site license
 
   * Calling bsxfun(@eq, a(:), sparse(1:n)) fails in Octave, but works if you omit the call to sparse. 
 
-  * The octave {{{which}}} function behaves slightly differently than Matlab's If you call {{{w = which('foo.m')}}} in Octave while in the same directory as {{{foo.m}}}, octave returns {{{w = '.\foo.m'}}}, whereas Matlab will return the full absolute filepath. 
+  * The octave {{{which}}} function behaves slightly differently than Matlab's If you call {{{w = which('foo.m')}}} in Octave while in the same directory as {{{foo.m}}}, octave returns {{{w = '.\foo.m'}}}, whereas Matlab will return the full absolute filepath. This causes problems when calling {{{addpath}}}.
 
 *Files Missing in Octave*
 
