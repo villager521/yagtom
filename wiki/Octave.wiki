@@ -11,8 +11,9 @@ However, there are some reasons to prefer Matlab:
   * It is faster than Octave, since it has a just-in-time compiler.
   * It has more functions.
 
-One approach is to develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics, and then for large compute jobs, convert them to Octave and run on the cloud (such as Amazon's EC2]); this we don't have to worry about licensing issues on the cloud.
-Unfortunately, converting code from matlab to octave is not entirely pain-free, for reasons we explain below.
+There are two main cases when you may need the free version: when running code on the cloud, and when you want to make your code runnable by general users who may not want to buy matlab.
+For the former, it is best to use the [http://www.mathworks.com/products/compiler/index.html matlab compiler], which lets you generate stand-alone code. (Note this code is not generally faster than interpreted code; basically the stand-alone code contains a matlab virtual machine inside it.)
+For the latter, you may want to use octave. Unfortunately, converting code from matlab to octave is not entirely pain-free, for reasons we explain below.
 
 *Compatability of Octave and Matlab*
 
