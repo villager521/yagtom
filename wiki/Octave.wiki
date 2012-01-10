@@ -43,7 +43,7 @@ One approach is to develop code locally in Matlab (using a local site license), 
 
   * The 'rows' function in Minka's [http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/ lightspeed] toolbox masks the built in Octave 'rows' function, which causes subtle bugs in unexpected places.
 
-  * Matlab uses different file extensions for different versions of .mex files, depending on the operating system. Octave does not, so it is difficult to include pre-compiled versions.
+  * Matlab uses different file extensions for different versions of .mex files, depending on the operating system. Octave does not, so it is difficult to include pre-compiled versions for multiple machines. See [http://www.gnu.org/software/octave/doc/interpreter/Dynamically-Linked-Functions.html#Dynamically-Linked-Functions this page] for more details.
 
 
 *Running Octave from within Matlab*
