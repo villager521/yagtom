@@ -4,16 +4,15 @@
  
 
 [http://www.gnu.org/software/octave/ Octave] is a free version of Matlab.
-Unfortunately, there are some disadvantages.
-The main advantages of Matlab over Octave are that
+However, there are some reasons to prefer Matlab:
 
   * It has much better graphics
   * It has a much better IDE (integrated development environment), including an excellent editor, debugger, and profiler 
   * It is faster than Octave, since it has a just-in-time compiler.
   * It has more functions.
 
-One approach is to develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics, and then for large compute jobs, convert them to Octave and run on the cloud (such as Amazon's EC2, or [http://www.monkeyanalytics.com/]); this we don't have to worry about licensing issues on the cloud.
-
+One approach is to develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics, and then for large compute jobs, convert them to Octave and run on the cloud (such as Amazon's EC2]); this we don't have to worry about licensing issues on the cloud.
+Unfortunately, converting code from matlab to octave is not entirely pain-free, for reasons we explain below.
 
 *Compatability of Octave and Matlab*
 
