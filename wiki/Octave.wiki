@@ -1,6 +1,6 @@
 #summary A page devoted to Octave
 
-*General discussion on Matlab vs Octave*
+*Matlab vs Octave*
 
  
 [http://www.gnu.org/software/octave/ Octave] is a free version of Matlab.
@@ -39,7 +39,7 @@ One approach is to develop code locally in Matlab (using a local site license), 
   * The following command fails, (does nothing) in Octave: {{{addpath(genpath(pwd), '-end')}}}. The problem is the {{{'-end'}}} option. 
 *Files Missing in Octave*
 
-[http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
+  * [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
 
   * Octave does not yet support Matlab's new Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should have no impact on PMTK3, which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave.
 
