@@ -37,11 +37,10 @@ One approach is to develop code locally in Matlab (using a local site license), 
   * The octave {{{which}}} function behaves slightly differently than Matlab's If you call {{{w = which('foo.m')}}} in Octave while in the same directory as {{{foo.m}}}, octave returns {{{w = '.\foo.m'}}}, whereas Matlab will return the full absolute filepath. This causes problems when calling {{{addpath}}}.
 
   * The following command fails, (does nothing) in Octave: {{{addpath(genpath(pwd), '-end')}}}. The problem is the {{{'-end'}}} option. 
-*Files Missing in Octave*
 
   * [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
 
-  * Octave does not yet support Matlab's new Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should have no impact on PMTK3, which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave.
+  * Octave does not yet support Matlab's new Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should have no impact on [http://code.google.com/p/pmtk3/ PMTK3], which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave.
 
   * The 'rows' function in Minka's [http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/ lightspeed] toolbox masks the built in Octave 'rows' function, which causes subtle bugs in unexpected places.
 
