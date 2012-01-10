@@ -12,7 +12,7 @@ The main advantages of Matlab over Octave are that
   * It is faster than Octave, since it has a just-in-time compiler.
   * It has more functions.
 
-What we usually do is develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics. But for large compute jobs, which we run on the cloud (such as Amazon's EC2, or [http://www.monkeyanalytics.com/]), we use Octave, so we don't have to worry about licensing issues.
+One approach is to develop code locally in Matlab (using a local site license), exploiting the nice IDE and graphics, and then for large compute jobs, convert them to Octave and run on the cloud (such as Amazon's EC2, or [http://www.monkeyanalytics.com/]); this we don't have to worry about licensing issues on the cloud.
 
 
 *Compatability of Octave and Matlab*
@@ -40,6 +40,13 @@ What we usually do is develop code locally in Matlab (using a local site license
 *Files Missing in Octave*
 
 [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
+
+  * Octave does not yet support Matlab's new Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should have no impact on PMTK3, which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave.
+
+  * The 'rows' function in Minka's [http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/ lightspeed] toolbox masks the built in Octave 'rows' function, which causes subtle bugs in unexpected places.
+
+  * Matlab uses different file extensions for different versions of .mex files, depending on the operating system. Octave does not, so it is difficult to include pre-compiled versions.
+
 
 *Running Octave from within Matlab*
 
