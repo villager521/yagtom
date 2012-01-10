@@ -2,6 +2,7 @@
 
 *Matlab vs Octave*
  
+
 [http://www.gnu.org/software/octave/ Octave] is a free version of Matlab.
 Unfortunately, there are some disadvantages.
 The main advantages of Matlab over Octave are that
@@ -20,7 +21,7 @@ One approach is to develop code locally in Matlab (using a local site license), 
 
   * Octave sets random seeds differently than Matlab, hence random data is not consistent. 
 
-  * Octave does not yet support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). 
+  * Octave does not yet (Fall 2011) support Matlab's Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). 
 
   * Octave does not support the concatenation of a cell array of strings and a string, you must first wrap the string in a cell. 
 
