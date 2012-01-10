@@ -1,7 +1,6 @@
-#summary A page devoted to Octave
+#summary Octave vs Matlab
 
 *Matlab vs Octave*
-
  
 [http://www.gnu.org/software/octave/ Octave] is a free version of Matlab.
 Unfortunately, there are some disadvantages.
@@ -40,7 +39,7 @@ One approach is to develop code locally in Matlab (using a local site license), 
 
   * [http://wiki.octave.org/wiki.pl?MissingMatlabFunctions Here] is a list of files in Matlab 2008a, missing in Octave. 
 
-  * Octave does not yet support Matlab's new Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should have no impact on [http://code.google.com/p/pmtk3/ PMTK3], which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave.
+  * Octave does not yet support Matlab's new Object Oriented System and has only limited support for the old style OO system, (e.g. no operator overloading support). This should have no impact on [http://code.google.com/p/pmtk3/ PMTK3], which no longer uses objects. However, PMTK1 and PMTK2 will not work in Octave, and nor will  [code.google.com/p/graphviz4matlab graphviz4matlab].
 
   * The 'rows' function in Minka's [http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/ lightspeed] toolbox masks the built in Octave 'rows' function, which causes subtle bugs in unexpected places.
 
